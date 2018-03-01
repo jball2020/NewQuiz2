@@ -1,8 +1,16 @@
-/***********************************************************************
-	The implementation file for course.h, which describes a college
-	course.
-		John Dolan		School of EECS		Summer2013
-**************************************************************************/
+/**
+* @file course.cc
+*
+* @brief This is the implementation of the course class
+* 	This class stores the three essential features of a completed 
+*	college course: the course number, the grade received, and the 
+*	credit hours for the course. The get_number_grade will return the 
+*	numeric equivalent of a letter grade as used in the standard 4 
+*	point system.
+* @author John Dolan	
+* School of EECS		Summer 2013
+************************************************************************/
+
 #include "course.h"
 #include<cstdlib>
 #include<iostream>

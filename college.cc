@@ -1,9 +1,12 @@
-//********************
-//Matthew Aberegg
-//Project 3
-//CS 2401
-//10/8/2015
-//********************
+/**
+* @file college.cc
+* @brief This is the implementation for the college class
+*
+* @author Matthew Aberegg
+* Project 3
+* CS 2401
+* 10/8/2015
+*/
 #include "college.h"
 #include<cstdlib>
 #include<iostream>
@@ -25,7 +28,12 @@ College::~College(){
 		delete rmptr;
 	}
 }
-
+/**
+* @brief Copy constructor for the college class
+*        creates a new college object from an old college object
+* @param const other of type College
+* @return object of type college that is a copy of other
+*/
 College::College(const College& other){
 	if(other.head == NULL){
 		head = NULL;
@@ -69,6 +77,11 @@ College& College::operator =(const College& other){
 	return * this;
 }
 
+/**
+* @brief Function that adds a course to the college
+* @param c a course object
+* @return void
+*/
 void College::add(course& c){
 	node * previous;
 	node * cursor;
@@ -107,6 +120,11 @@ void College::add(course& c){
 	}
 }
 
+/**
+* @brief function that removes a course from the college
+* @param string coursename
+* @return void
+*/
 void College::remove(std::string coursename){
 	node * previous;	
 	node * cursor;
